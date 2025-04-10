@@ -1,53 +1,77 @@
-🎮 AI-Powered Gesture-Based Subway Surfer Controller
-A hands-free, AI-driven game controller that empowers hand-disabled gamers to play Subway Surfer using only head movements via webcam.
+<h1 align="center">🎮 AI-Powered Gesture-Based Subway Surfer Controller</h1>
+<h3 align="center">Assistive Technology for Hand-Disabled Gamers</h3>
 
-📘 Project Overview
-This project transforms head gestures into game controls using computer vision and AI, allowing individuals with hand disabilities to enjoy games without a keyboard or mouse.
+---
 
-Built with Python, OpenCV, MediaPipe, and PyAutoGUI, the system detects head movement in real-time and simulates keyboard inputs for intuitive, hands-free gameplay.
+<h2>📘 Project Overview</h2>
 
-🔍 How It Works
-🎥 Webcam Input – Captures real-time video of the player's face.
+<p>
+The <strong>AI-Powered Gesture-Based Subway Surfer Controller</strong> is an innovative assistive technology project designed to empower individuals with hand disabilities to enjoy games like Subway Surfer using only head gestures and a webcam.
+</p>
 
-🧠 Head Tracking – MediaPipe detects facial landmarks to identify head orientation.
+<p>
+This Python-based system leverages <strong>Computer Vision</strong> and <strong>AI</strong> to convert real-time head movements into arrow key commands using:
+<ul>
+  <li><strong>OpenCV</strong> for video input</li>
+  <li><strong>MediaPipe</strong> for face landmark detection</li>
+  <li><strong>PyAutoGUI</strong> for keyboard simulation</li>
+</ul>
+</p>
 
-🕹️ Gesture Zones – The screen is split into four directional zones.
+---
 
-⌨️ Simulated Controls – PyAutoGUI triggers arrow keys based on detected gestures:
+<h2>🔍 How It Works</h2>
 
-Left head tilt → Left Arrow
+<ol>
+  <li><strong>Camera Input:</strong> Webcam continuously captures video.</li>
+  <li><strong>Head Detection:</strong> MediaPipe detects facial landmarks.</li>
+  <li><strong>Zone Division:</strong> Camera feed is split into Up, Down, Left, Right zones.</li>
+  <li><strong>Gesture Recognition:</strong>
+    <ul>
+      <li>Head Right → <code>Right Arrow</code></li>
+      <li>Head Left → <code>Left Arrow</code></li>
+      <li>Head Up → <code>Up Arrow</code> (Jump)</li>
+      <li>Head Down → <code>Down Arrow</code> (Slide)</li>
+    </ul>
+  </li>
+  <li><strong>Keyboard Simulation:</strong> PyAutoGUI simulates the matching keystroke.</li>
+</ol>
 
-Right head tilt → Right Arrow
+---
 
-Head up → Up Arrow (Jump)
+<h2>✨ Key Features</h2>
 
-Head down → Down Arrow (Slide)
+<ul>
+  <li>🎥 <strong>Real-Time Head Tracking</strong> – MediaPipe face mesh detection</li>
+  <li>🧠 <strong>Gesture-Based Control</strong> – Head movements become in-game actions</li>
+  <li>⌨️ <strong>Auto Key Simulation</strong> – PyAutoGUI sends arrow keys</li>
+  <li>⚡ <strong>Lightweight & Efficient</strong> – Runs on standard laptops</li>
+  <li>♿ <strong>Accessibility Focused</strong> – Hands-free gaming for all</li>
+  <li>🚀 <strong>No Extra Hardware</strong> – Just a webcam needed</li>
+</ul>
 
-✨ Features
-Real-time, accurate head movement tracking
+---
 
-Fully hands-free control system
+<h2>📦 Technologies Used</h2>
 
-Easy setup—just Python + Webcam
+<ul>
+  <li>Python 3.x</li>
+  <li>OpenCV (cv2)</li>
+  <li>MediaPipe</li>
+  <li>PyAutoGUI</li>
+</ul>
 
-No external sensors or devices required
+---
 
-Accessibility-first design for inclusive gaming
+<h2>🔧 Future Enhancements</h2>
 
-📦 Tech Stack
-Python 3.x
+<ul>
+  <li>🎮 Expand to support more games</li>
+  <li>📱 Port to mobile for broader accessibility</li>
+  <li>🗣️ Add voice control for extended actions</li>
+  <li>🧠 ML-based gesture refinement for precision</li>
+</ul>
 
-OpenCV
+---
 
-MediaPipe
-
-PyAutoGUI
-
-🚀 Future Enhancements
-Expand to more games and controls
-
-Add gesture calibration UI
-
-Integrate voice commands
-
-Port to mobile or browser environments
+<h3 align="center">🚀 Built with Love & AI – Empowering Inclusive Gaming Experiences 🎮</h3>
