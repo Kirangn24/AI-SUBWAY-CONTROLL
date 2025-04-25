@@ -2,7 +2,7 @@ import cv2
 import mediapipe as mp
 import numpy as np
 from pynput.keyboard import Controller, Key
-import time
+import time 
 
 # Initialize MediaPipe Pose Detection
 mp_pose = mp.solutions.pose
